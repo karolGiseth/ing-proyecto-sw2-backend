@@ -17,10 +17,6 @@ public class Usuario {
     @JoinColumn(name = "id_tipo", referencedColumnName = "id" )
     private TipoUsuario tipoUsuario;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "id_imagen", referencedColumnName = "id" )
-    private Imagen imagen;
-
     public int getId() {
         return id;
     }
@@ -45,11 +41,4 @@ public class Usuario {
         this.tipoUsuario = tipoUsuario;
     }
 
-    public Imagen getImagen() {
-        return imagen;
-    }
-
-    public void setImagen(Imagen imagen) {
-        this.imagen = imagen;
-    }
 }

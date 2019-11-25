@@ -10,8 +10,10 @@ public class Sesion {
     @Column(name="id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     @Column (name="nombre_usuario")
     private String nombreUsuario;
+
     @Column (name="contraseña")
     private String contraseña;
 

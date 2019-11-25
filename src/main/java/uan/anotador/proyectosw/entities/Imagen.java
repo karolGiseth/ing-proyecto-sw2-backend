@@ -18,6 +18,10 @@ public class Imagen {
     @Column
     private String descripcion;
 
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "id_usuario", referencedColumnName = "id" )
+    private Usuario usuario;
+
     public int getId() {
         return id;
     }
@@ -56,5 +60,13 @@ public class Imagen {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }

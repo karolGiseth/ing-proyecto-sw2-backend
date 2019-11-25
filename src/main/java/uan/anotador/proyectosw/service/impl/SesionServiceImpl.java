@@ -12,7 +12,8 @@ public class SesionServiceImpl implements ISesionService {
     SesionRepository sesionRepository;
 
     @Override
-    public Sesion getSesion(String username, String password) {
+    public Sesion
+    getSesion(String username, String password) {
         return sesionRepository.getSesion(username,password);
     }
 }
