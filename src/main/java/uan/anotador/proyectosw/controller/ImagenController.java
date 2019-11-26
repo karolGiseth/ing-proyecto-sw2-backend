@@ -40,5 +40,15 @@ public class ImagenController {
     public ResponseEntity<Iterable<Imagen>> findAll (){
         return new ResponseEntity<>(imagenService.findAll(), HttpStatus.OK);
     }
+    
+    @RequestMapping( "/sabe-Url" )
+    
+    public class saveUrl{
+    	
+    	
+    }
 
 }
+
+
+
