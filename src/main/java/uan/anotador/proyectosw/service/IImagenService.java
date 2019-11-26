@@ -8,4 +8,5 @@ public interface IImagenService {
     Imagen update (Imagen imagen) throws ResourceNotFoundException;
     void deleteById (int id);
     Iterable<Imagen>findAll();
+    Iterable<Imagen>findByUsuarioId(int id);
 }

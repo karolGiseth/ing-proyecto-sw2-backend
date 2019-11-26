@@ -41,11 +41,9 @@ public class ImagenController {
         return new ResponseEntity<>(imagenService.findAll(), HttpStatus.OK);
     }
     
-    @RequestMapping( "/sabe-Url" )
-    
-    public class saveUrl{
-    	
-    	
+    @GetMapping( "/send-image" )
+    public  ResponseEntity<Iterable<Imagen>> sendImage(@RequestParam int id){
+        return new ResponseEntity<>(imagenService.findByUsuarioId(id), HttpStatus.OK);
     }
 
 }

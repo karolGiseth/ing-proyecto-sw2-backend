@@ -36,4 +36,9 @@ public class ImagenServiceImpl implements IImagenService {
     public Iterable<Imagen> findAll() {
         return imagenRepository.findAll();
     }
+
+    @Override
+    public Iterable<Imagen> findByUsuarioId(int id) {
+        return imagenRepository.findByUsuarioId(id);
+    }
 }
