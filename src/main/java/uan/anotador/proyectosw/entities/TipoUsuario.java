@@ -16,6 +16,7 @@ public class TipoUsuario {
 
     public int getId() {
         return id;
+        
     }
 
     public void setId(int id) {
